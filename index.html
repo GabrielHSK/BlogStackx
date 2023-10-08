@@ -6,77 +6,75 @@
     <link rel="shortcut icon" href="/img/globe-americas.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/BlogStackx/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    <title>World Tech</title>
+    <title>World </> Tech</title>
 </head>
 <body>
     
-    <header>
-             <div class="center">
-                <div class="logo"><img src="/BlogStackx/img/PpDovLFNlogoo.png" alt=""></div>
-                <nav class="menu">
-                        <a href="#" data_all_category>todas</a>
-                        <a href="#" data_technology_category>Tecnologias</a>
-                        <a href="#" data_ia_category>IA</a>
-                        <a href="#" data_inovation_category>Inovações</a>
-                        <a href="#" data_games_category>Games</a>
+    <header class="header">
+             <a href="#" class="logo">World Tech</a>
 
-                    </ul>
-                </nav>
-             </div> 
+             <input type="checkbox" id="check">
+             <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+             </label>
+
+                <nav class="navbar">
+                    <a href="#" style="--i:0;" data_all_category>Todas</a>
+                    <a href="#" style="--i:1;" data_technology_category>Tecnologias</a>
+                    <a href="#" style="--i:2;" data_ia_category>IA</a>
+                    <a href="#" style="--i:3;" data_inovation_category>Inovações</a>
+                    <a href="#" style="--i:4;" data_games_category>Games</a>
+                </nav> 
     </header>
-    <main class="cards" id="post-content">
-        <section class="card" data_cards data_card1  data_card="technology">
-            <div class="icon">
-                <img src="/BlogStackx/img/NuHeu8ho.png_small" alt="Saiba mais">
-                <span data_date>data</span>
-                <span>visualização:<span data_views_card1>0</span></span>
-            </div>
-            <h1>Cameras e lentes</h1>
-            <h3>lorem</h3>
-            <a href="#"><i><button>Saiba mais</button></i></a>
-        </section>
-        <section class="card" data_cards data_card2 data_card="inovation">
-            <div class="icon">
-                <img src="/BlogStackx/img/Vntg3qeX.png_small" alt="Saiba mais">
-                <span data_date>data</span>
-                <span>visualização:<span data_views_card2>0
-                </span></span>
-            </div>
-            <h1>telescópio James Webb</h1>
-            <h3>lorem fwsfgsgsfg </h3>
-            <a href="#"><i><button>Saiba mais</button></i></a>
 
-        </section>
-        <section class="card" id="card2" data_cards data_card3 data_card="ia">
-            <div class="icon">
-                <img src="/BlogStackx/img/Cka_58bX.png_small" alt="Saiba mais">
-                <span data_date>data</span>
-                <span class="span">visualização:<span data_views_card3>0
-                </span></span>
+        <section class="container" id="post-content">
+
+            <div class="card" data_cards data_card1  data_card="technology">
+                <div class="card-image car-1"></div>
+                    <span class="data" data_date>data</span>
+                    <span class="spann">visualização:<span data_views_card1>0</span></span>
+                    <h3>Cameras e Lentes</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetubis, voluptate aperiam.</p>
             </div>
-            <h1>AI - Qual o limite?</h1>
-            <h3>lorem</h3>
-            <a href="#"><i><button>Saiba mais</button></i></a>
-        </section>
-        <section class="card" data_cards data_card4 data_card="games">
-            <div class="icon">
-                <img src="/BlogStackx/img/Vntg3qeX.png_small" alt="Saiba mais">
-                <span data_date>data</span>
-                <span>visualização:<span data_views_card4>0
-                </span></span>
+
+            <div class="card" data_cards data_card2 data_card="inovation">
+                <div class="card-image car-2"></div>
+                    <span class="data"  data_date>data</span>
+                    <span class="spann">visualização:<span data_views_card2>0</span></span>
+                    <h3>telescópio James Webb</h3>
+                    <p>lorem fwsfgsgsfg </p>
             </div>
-            <h1>Nova placa de video</h1>
-            <h3>lorem afdsdfsdf</h3>
-            <a href="#"><i><button>Saiba mais</button></i></a>
-        </section>
+
+            <div class="card" id="card2" data_cards data_card3 data_card="ia">
+                <div class="card-image car-3"></div>
+                    <span class="data" data_date>data</span>
+                    <span class="spann">visualização:<span data_views_card3>0</span></span>
+                    <h3>AI - Qual o limite?</h3>
+                    <p>lorem</p>
+            </div>
+
+            <div class="card" data_cards data_card4 data_card="games">
+                <div class="card-image car-4"></div>
+                    <span class="data" data_date>data</span>
+                    <span class="spann">Visualizações:<span data_views_card4>0</span></span>
+                    <h3>Nova placa de video</h3>
+                    <p>lorem afdsdfsdf</p>
+            </div>
+        </section>  
+
+    <main>
+
     </main>
     <footer id="rodape">
         <div id="conteudo-footer">
             <div id="footer-contato">
-                <h1>Logo</h1>
-                <p>The future is now</p>
+                <h1>World </> Tech</h1>
+                <p>The Future is Now.</p>
 
                 <div id="footer-social-media">
                     <a href="#" class="footer-link" id="instagram">
@@ -96,7 +94,7 @@
 
             <ul class="footer-lista">
                 <li>
-                    <h3>blog</h3>
+                    <h3>Blog</h3>
                 </li>
                 <li>
                     <a href="#" class="footer-link">Games</a>
@@ -111,7 +109,7 @@
 
             <ul class="footer-lista">
                 <li>
-                    <h3>Informaçoes</h3>
+                    <h3>Informações</h3>
                 </li>
                 <li>
                     <a href="#" class="footer-link">App</a>
