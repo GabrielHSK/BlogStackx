@@ -4,22 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/postpage.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/postpage.css">
+    <link rel="shortcut icon" href="/BlogStackx/img/icons8-dev-16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/globe-americas.svg" type="image/x-icon">
+
     <title>News</title>
 </head>
 
 <body>
-    <a href="index.html" class="center">home</a>
-    <section>
-        <div class="icon">
-            <img src="" alt="imagem sugestiva" data_img>
-            <span data_date>Data:</span>
-            <span>Visualizações:<span data_views>0</span></span>
+    <header class="header">
+        <a href="#" class="logo">World Tech</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+           <i class='bx bx-menu' id="menu-icon"></i>
+           <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+           <nav class="navbar">
+            <a href="index.html" style="--i:0;" class="center">Home</a>
+           </nav> 
+    </header>
+
+    <section class="container" id="post-content">
+        <div class="card">
+            <img class="card-image" src="" alt="imagem sugestiva" data_img>
+            <span class="data" data_date>Data:</span>
+            <span class="spann" >Visualizações:<span data_views>0</span></span>
+            <h3 class="" data_tittle>titulo</h3>
+            <p class="data-text" data_text></p>
+            <a href="" data_link target="_blank" rel="external">saiba mais</a> 
         </div>
-        <h1 data_tittle>titulo</h1>
-        <p data_text>lorem</p>
-        <a href="" data_link target="_blank" rel="external">saiba mais</a> 
+
     </section>
+    <main>
+
+    </main>
+    <footer id="rodape">
+        <div id="conteudo-footer">
+            <div id="footer-contato">
+                <h1>World </> Tech</h1>
+                <p>The Future is Now.</p>
+
+                <div id="footer-social-media">
+                    <a href="https://www.instagram.com/gabeshds/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram" style="color: #be27b9;"></i>
+                    </a>
+                    <a href="https://github.com/GabrielHSK" class="footer-link" id="github">
+                        <i class="fa-brands fa-square-github" style="color: #f5f5f5;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabrielhenriquehsk/" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin" style="color: #0052e0;"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp" style="color: #00cc03;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-lista">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Games</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">News</a>
+                </li>
+            </ul>
+
+            <ul class="footer-lista">
+                <li>
+                    <h3>Informações</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer-inscricao">
+                <h3>Se inscreva</h3>
+
+                <p>Entre com seu email e seja notificado com novas noticias</p>
+
+                <div id="input-grupo">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            &#169
+            2023 all rigths reserved
+        </div>
+    </footer>
 </body>
 
 </html>
